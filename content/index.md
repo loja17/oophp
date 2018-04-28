@@ -4,7 +4,7 @@ title: "My title"
 Min me-sida i kursen oophp
 =========================
 
-[FIGURE src="image/me.jpg?w=500" caption="Bild på mig"]
+[FIGURE src="image/louise.jpg?w=500" caption="Bild på mig"]
 
 Mitt namn är Louise Jakobsson, jag är 25 år gammal och är uppvuxen i Lerum som ligger några mil från Göteborg. Numera bor jag i Göteborg med min syster, våra partners och våra djur. Vi har bland annat två italienska vinthundar som älskar att gosa och tycker det är jättebra att matte pluggar på distans och kan vara hemma med dem.
 

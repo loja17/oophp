@@ -11,12 +11,10 @@ namespace Anax\View;
 
 ?>
 
-NAVBAR <?= __FILE__ ?> <br>
-
 <navbar>
-    <a href="<?= url("") ?>">Hem</a> |
-    <a href="<?= url("redovisning") ?>">Redovisning</a> |
-    <a href="<?= url("om") ?>">Om</a> |
-    <a href="<?= url("lek") ?>">Lek</a> |
+    <a href="<?= url("") ?>">Hem</a>
+    <a href="<?= url("redovisning") ?>">Redovisning</a>
+    <a href="<?= url("om") ?>">Om</a>
+    <a href="<?= url("lek") ?>">Lek</a>
     <a href="<?= url("debug") ?>">Debug</a>
 </navbar>

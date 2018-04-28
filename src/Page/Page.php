@@ -31,7 +31,7 @@ class Page implements /* PageRenderInterface, */ InjectionAwareInterface
 
         // Add static assets
         $data["favicon"] = "favicon.ico";
-        $data["stylesheets"] = ["css/style.css"];
+        $data["stylesheets"] = ["css/style.css", "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans"];
         $data["javascripts"] = ["js/main.js"];
 
         // Add views for common header, navbar and footer

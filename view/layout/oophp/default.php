@@ -20,9 +20,13 @@ namespace Anax\View;
     <link rel="icon" href="<?= $favicon ?>">
 <?php endif; ?>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+
 <?php foreach ($stylesheets as $stylesheet) : ?>
     <link rel="stylesheet" type="text/css" href="<?= asset($stylesheet) ?>">
 <?php endforeach; ?>
+
 
 </head>
 <body>

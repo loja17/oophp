@@ -3,10 +3,10 @@
 Om
 =========================
 
-Denna webbplatsen är en del av kursen [oophp](https://dbwebb.se/kurser/XXX). Uppdatera så att länken går till kursens hemsida på dwebb.se.
+Denna webbplatsen är en del av kursen [oophp](https://dbwebb.se/kurser/oophp-v4). 
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/krakgos.jpg?w=300 caption="Gullig va?"]
 
-[Kursrepot på GitHub](https://github.com/dbwebbse/oophp).
+Länk till [kursrepot på GitHub](https://github.com/dbwebbse/oophp-v4).
 
-[Mitt eget repo för me/redovisa på GitHub](https://github.com/loja-17/oophp-redovisa).
+Länk till mitt eget [repo för me/redovisa på GitHub](https://github.com/loja17/oophp).
