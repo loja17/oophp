@@ -1,0 +1,82 @@
+<?php
+namespace Louise\Dice;
+
+/**
+ * Showing off a standard class with methods and properties.
+ */
+class DiceRound
+{
+  /**
+     * @var integer $player   The player.
+     * @var integer $dicehand The dicehand object.
+     * @var integer $points   The points fpr one throw.
+     * @var array   $resultarray The array with result.
+     */
+    private $player;
+    private $dicehand;
+    private $points;
+    private $resultarray;
+
+    /**
+     * Constructor to create a Game.
+     *
+     * @param null|int    $dice The dices.
+     * @param null|int    $throws The throws.
+     */
+    public function __construct(int $player, int $dices)
+    {
+        $this->player = $player;
+        $this->dicehand = new DiceHand($dices);
+    }
+
+
+    /**
+     * Check if result contains a 1 and set points.
+     *
+     * @return void.
+     */
+    public function round(&$resultarray)
+    {
+
+        if (in_array("1", $resultarray)) {
+            $this->points = 0;
+        } else {
+            $this->points = $this->dicehand->sum();
+        }
+    }
+
+
+    /**
+     * Get array with results.
+     *
+     * @return array
+     */
+    public function getResArray()
+    {
+        return $this->resultarray;
+    }
+
+
+    /**
+     * Set the player of the round
+     *
+     * @param $player
+     *
+     * @var int $player The number of the player
+     */
+    public function setPlayer($player)
+    {
+        $this->player = $player;
+    }
+
+
+    /**
+     * Get the player of the round
+     * @return void
+     */
+    public function getPlayer()
+    {
+        return $this->player;
+    }
+}
+

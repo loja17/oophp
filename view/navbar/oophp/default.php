@@ -16,6 +16,7 @@ namespace Anax\View;
     <a href="<?= url("redovisning") ?>">Redovisning</a> |
     <a href="<?= url("om") ?>">Om</a> |
     <a href="<?= url("gissa") ?>">Gissa</a> |
+    <a href="<?= url("dice/start") ?>">Tärningsspel 100</a> |
     <a href="<?= url("lek") ?>">Lek</a> |
     <a href="<?= url("debug") ?>">Debug</a>
 </navbar>

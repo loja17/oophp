@@ -1,0 +1,47 @@
+<?php
+namespace Louise\Dice;
+
+/**
+ * Showing off a standard class with methods and properties.
+ */
+class DicePlayer
+{
+  /**
+     * @var integer $playernum  Player.
+     */
+    private $playernum;
+ 
+
+    /**
+     * Constructor to create a DicePlayer.
+     *
+     * @param null|int    $dice The dices.
+     * @param null|int    $throws The throws.
+     */
+    public function __construct()
+    {
+    }
+
+    /**
+     * Set the player number.
+     *
+     * @param int $playernumber.
+     *
+     * @return void
+     */
+    public function setCurrentPlayer($playernumber)
+    {
+        $this->playernum = $playernumber;
+    }
+
+    /**
+     * Get the value of the player.
+     *
+     * @return int playernumber.
+     */
+    public function getCurrentPlayer()
+    {
+        return $this->playernum;
+    }
+}
+
