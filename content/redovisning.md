@@ -43,9 +43,25 @@ Namespace i php är väl det som var mest nytt för mig.
 Kmom03
 -------------------------
 
-Här är redovisningstexten
+**Har du tidigare erfarenheter av att skriva kod som testar annan kod?**
+Nja, inte direkt. Tidigare har jag gjort någon form av test så att man vet att koden fungerar och gör rätt saker, men inte på detta viset med verktyg som PHPunit.
+
+**Hur ser du på begreppen enhetstestning och att skriva testbar kod?**
+Jag ser (numera) enhetstestning som en viktig del när man skriver kod. Att koden skrivs testbar är något man tjänar på i längden då fel kan upptäckas i ett tidigt skede samtidigt som de blir lättare att hitta i efterhand. Jag tror det blir lättare för andra att föstå sig på koden om den är testbar. Likaså blir det ju lättare för utvecklaren om koden testas innan den används "på riktigt".
+
+**Förklara kort begreppen white/grey/black box testing samt positiva och negativa tester, med dina egna ord.**
+Whitebox: Whitebox-testning innebär att testaren har tillgång till hela källkoden och kan se hur den ser ut. Det kräver att testaren har kunskaper nog att förstå hur koden fungerar. En positiv sak kan vara att testaren har full insyn i koden och kanske hittar fel lättare medans samma sak kan vara negativt då det kräver vissa kunskaper.
+
+Greybox: Greyox-testning innebär att testaren bara har tillgång till relevanta delar av koden. Testaren kan tex ha tillgång till algoritmer som används. Det är som en kombination av whitebox och blackbox. 
+
+Blackbox: Blackbox-testning innebär att testaren inte har tillgång till programkoden som ska testats. Man testar funktionalitet och testaren vet inte hur programkoden gör något utan vad programkoden gör eller ska göra. Det som kan vara bra är testaren inte behöver ha kunskaper i hur programkoden utför något.
 
 
+**Hur gick det att genomföra uppgifterna med enhetstester, använde du egna klasser som bas för din testning?**
+Det gick bra att genomföra uppgiften, men jag använde inte mina egna klasser. Jag skrev en ny funktion i taget och testade denna, när den täckte den del av koden som jag ville skrev jag nästa. Jag tog hjälp av video-serien och readme. Vet inte riktigt om jag gjort på rätt sätt men koden har 100% täckning nu så jag antar att det räcker.
+
+**Vilken är din TIL för detta kmom?**
+Min TIL är vad begreppet enhetstestning faktiskt innebär. Jag har kommit i kontakt med begreppet tidigare men inte riktigt förstått vad som menas.
 
 Kmom04
 -------------------------
