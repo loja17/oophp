@@ -5,7 +5,8 @@ session_start();
 
 $_SESSION['computer'] = 0;
 $_SESSION['me'] = 0;
-$_SESSION['roundNr'] = 0; 
+$_SESSION['temp'] = 0;
+$_GET['dices'] = 0;
 
 
 ?>

@@ -101,8 +101,9 @@ class DiceGame
 
         if (in_array(1, $throwRes)) {
             $this->points = 0;
-            echo "Datorn fick en etta, uren går över till dig!";
+            echo "Datorn fick en etta, turen går över till dig!";
             echo "<form method='POST'><input type='submit' name='throwMe' value='Kasta'></form>";
+            $_SESSION['temp'] = 0;
         } else {
             $this->points = array_sum($throwRes);
             if (rand(1, 2) == 1) {
@@ -110,11 +111,11 @@ class DiceGame
                 echo "<form method='POST'><input type='submit' name='throwComputer' value='Kasta åt datorn'></form>";
             } else {
                 echo "Datorn vill inte fortsätta, turen går över till dig.";
-                echo "<form method='POST'><input type='submit' name='throwMe' value='Kasta'></form>";
+                echo "<form method='POST'><input type='submit' name='throwMe2' value='Kasta'></form>";
             }
         }
 
-        echo "Datorn fick $this->points poäng";
+        echo "Slaget ger datorn $this->points poäng";
     }
 
 
@@ -153,15 +154,16 @@ class DiceGame
             $this->points = 0;
             echo "Du fick en etta och turen går över till datorn...";
             echo "<form method='POST'><input type='submit' name='throwComputer' value='Kasta åt datorn'></form>";
+            $_SESSION['temp'] = 0;     
         } else {
             $this->points = array_sum($throwRes);
             echo "Vill du kasta igen?";
             echo "<form method='POST'><input type='submit' name='throwMe' value='Kasta igen!'></form>";
-            echo "<form method='POST'><input type='submit' name='throwComputer' 
+            echo "<form method='POST'><input type='submit' name='throwComputer2' 
                     value='Lämna över turen och kasta åt datorn'></form>";
         }
 
-        echo "Du fick $this->points poäng";
+        echo "Slaget ger dig $this->points poäng";
     }
 
 

@@ -6,6 +6,8 @@ namespace Anax\View;
  * Template file to render start-view for dicegame.
  */
 
+$_SESSION['temp'] = 0;
+
 ?>
 <h1><?= $title ?></h1>
 

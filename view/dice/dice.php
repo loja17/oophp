@@ -68,23 +68,41 @@ if ($currentPlayer == 1) {
 if (!empty($_POST['throwComputer']) && $gameover = true) {
     $game->playComputer(2, $diceAmount, $throwRes, $class, $dice, $play);
     $temp = $game->getScore();
-    $_SESSION['computer'] += $temp;
-    $_SESSION['roundNr'] += 1; 
+    $_SESSION['temp'] += $temp;
+}
+
+if (!empty($_POST['throwComputer2']) && $gameover = true) {
+    $_SESSION['me'] = $_SESSION['me'] + $_SESSION['temp'];
+    $_SESSION['temp'] = 0;
+            
+    $game->playComputer(2, $diceAmount, $throwRes, $class, $dice, $play);
+    $temp = $game->getScore();
+    $_SESSION['temp'] += $temp;
 }
 
 if (!empty($_POST['throwMe']) && $gameover = true) {
     $game->playMe(1, $diceAmount, $throwRes, $class, $dice, $play);
     $temp = $game->getScore();
-    $_SESSION['me'] += $temp;
-    $_SESSION['roundNr'] += 1;
+    $_SESSION['temp'] += $temp;
+}
+
+if (!empty($_POST['throwMe2']) && $gameover = true) {
+    $_SESSION['computer'] = $_SESSION['computer'] + $_SESSION['temp'];
+    $_SESSION['temp'] = 0;
+
+    $game->playMe(1, $diceAmount, $throwRes, $class, $dice, $play);
+    $temp = $game->getScore();
+    $_SESSION['temp'] += $temp;
+}
+
+if ($_SESSION['temp'] > 0) {
+    echo "<p>Rundan ger för närvarande <b>" . $_SESSION['temp'] . "</b> poäng!</p>";
 }
 
 echo "<hr>";
 echo "<h3>Ställning</h3>";
 echo "Du: " . $_SESSION['me'] . "<br>";
 echo "Datorn: " . $_SESSION['computer'] . "<br><br>";
-echo "<h4>Runda " . $_SESSION['roundNr'];
-echo "<hr>";
 
 
 if ($_SESSION['computer'] >= 100) {
